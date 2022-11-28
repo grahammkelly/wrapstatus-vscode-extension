@@ -11,11 +11,6 @@ const wwSetting = "editor.wordWrap";
 
 export function activate({subscriptions}: vscode.ExtensionContext) {
     //Register the commands to be invoked when the status bar item is selected 
-    subscriptions.forEach(element => {
-        vscode.window.showInformationMessage(`${extName}: [1] element - ${element}`);
-    });
-
-
     //Create the status bar item
     statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 999);
     statusBarItem.command = cmdId;
@@ -25,18 +20,14 @@ export function activate({subscriptions}: vscode.ExtensionContext) {
     subscriptions.push(vscode.workspace.onDidChangeConfiguration(event => 
         doActionForSettingChange(event, wwSetting, updateWrapStatusBar)));
 
-    subscriptions.forEach(element => {
-        vscode.window.showInformationMessage(`${extName}: [2] element - ${element}`);
-    });
-
-    vscode.window.showInformationMessage(`${extName}: Extension starting now`);
+    vscode.window.showInformationMessage(`${extName}: Live status of the WordWrap setting will be shown in the status bar`);
     
     updateWrapStatusBar();
 }
 
 function doActionForSettingChange(event: vscode.ConfigurationChangeEvent, settingToListenFor: string, action: () => any): void {
     const isSettingWeWant = event.affectsConfiguration(settingToListenFor);
-    vscode.window.showInformationMessage(`${extName}: Was '${settingToListenFor}' changed? ${isSettingWeWant ? 'Yes' : 'No'}`);
+    
     if (isSettingWeWant) {
         action();
     }
@@ -45,7 +36,6 @@ function doActionForSettingChange(event: vscode.ConfigurationChangeEvent, settin
 function updateWrapStatusBar(): void {
     const currentWrapStatus = vscode.workspace.getConfiguration().get(wwSetting);
     statusBarItem.text = `$(megaphone) ${currentWrapStatus}`;
-    vscode.window.showInformationMessage(`${extName}: wrap status - ${currentWrapStatus}`);
 
     statusBarItem.show();
 }
