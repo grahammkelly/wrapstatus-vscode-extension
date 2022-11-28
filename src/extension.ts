@@ -35,7 +35,8 @@ function doActionForSettingChange(event: vscode.ConfigurationChangeEvent, settin
 
 function updateWrapStatusBar(): void {
     const currentWrapStatus = vscode.workspace.getConfiguration().get(wwSetting);
-    statusBarItem.text = `$(megaphone) ${currentWrapStatus}`;
+    statusBarItem.text = `Wrap: ${currentWrapStatus}`;
+    statusBarItem.tooltip = `Word-wrap is: ${currentWrapStatus}`
 
     statusBarItem.show();
 }
