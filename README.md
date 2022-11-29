@@ -12,7 +12,7 @@ Also allows you to double click the status bar item, which will cycle through th
 ## Supported versions
 This extension was tested on 
 * VSCodium 1.73.1
-* VisualStudio Code 
+* VisualStudio Code 1.73.1
 
 ## Acknowledgements
 This extension is based upon the sample statusbar from https://github.com/microsoft/vscode-extension-samples

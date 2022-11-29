@@ -52,10 +52,17 @@ function handleClick(): void {
             //We won't do anything for a single click, so the clear timout and do nothing else once the timer expires
             clearDblClickTimeout();
         }, dblClickTimeMs);
-    } else {
+    } else if (canChangeSettings()) {
         console.debug(`${extName}: Double-click detected`);
         clearDblClickTimeout();
         changeWrapSetting();
+    } else {
+        vscode.window.showInformationMessage(`${extName}: Editor does not have an open workspace or folder, unable to change wrap setting`);
+    }
+
+    function canChangeSettings(): boolean {
+        const s = vscode.workspace.workspaceFolders
+        return (s != undefined) && (s.length > 0); //Negative is simpler to code, just (!s), but harder to understand in calling code
     }
 
     function clearDblClickTimeout() {
