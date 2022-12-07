@@ -27,3 +27,5 @@ The double click detection is based on tips & code from `medo64` (from this repo
 [0.1.0](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.0) Initially working status bar extension
 
 [0.1.1](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.1) Same as 0.1.0, however removed the browser extension files (not working and I don't use `vscode.dev` enough to be bothered investigating)
+
+[0.1.2](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.2) Added eslint action to the repository, updated README. No functional changes
