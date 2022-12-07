@@ -32,7 +32,7 @@ export function activate({subscriptions}: vscode.ExtensionContext) {
     //Register the action to do when the user clicks the status bar item
     vscode.commands.registerCommand(cmdId, handleClick);
 
-    console.log(`${extName}: Live status of the WordWrap setting will be shown in the status bar`)
+    console.log(`${extName}: Live status of the WordWrap setting will be shown in the status bar`);
     
     updateWrapStatusBarItem();
 }
@@ -43,7 +43,7 @@ export function activate({subscriptions}: vscode.ExtensionContext) {
 // Just to point out though, even with the timeout, the 'double-click' seems to be handled twice (once for each click!)
 //  Seems to set the setting correctly though. I think the config is 'read' simultaneously for both handlers
 //
-var dblClickTimerId: ReturnType<typeof setTimeout> | null = null;
+let dblClickTimerId: ReturnType<typeof setTimeout> | null = null;
 const dblClickTimeMs = 250; //Anything over 250ms is NOT a double click
 
 function handleClick(): void {
@@ -61,7 +61,7 @@ function handleClick(): void {
     }
 
     function canChangeSettings(): boolean {
-        const s = vscode.workspace.workspaceFolders
+        const s = vscode.workspace.workspaceFolders;
         return (s != undefined) && (s.length > 0); //Negative is simpler to code, just (!s), but harder to understand in calling code
     }
 
@@ -72,8 +72,8 @@ function handleClick(): void {
 
     function changeWrapSetting(): void {
         const wrapSettingsOrder = ["on", "off", "wordWrapColumn", "bounded"];
-        const cfg = vscode.workspace.getConfiguration()
-        const origWrapSetting = cfg.get(wwSetting) as string
+        const cfg = vscode.workspace.getConfiguration();
+        const origWrapSetting = cfg.get(wwSetting) as string;
         const curSettingElem= wrapSettingsOrder.indexOf(origWrapSetting);
         const newSetting = wrapSettingsOrder[(curSettingElem+1) % wrapSettingsOrder.length];
     
@@ -86,7 +86,7 @@ function doActionWhenSettingChangeDetected(event: vscode.ConfigurationChangeEven
     const isSettingWeWant = settingToListenFor.some((setting:string) => event.affectsConfiguration(setting));
     
     if (isSettingWeWant) {
-        console.debug(`${extName}: Setting change detected`)
+        console.debug(`${extName}: Setting change detected`);
         action();
     }
 }

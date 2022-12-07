@@ -3,7 +3,9 @@
 	"displayName": "Wordwrap status",
 	"description": "Shows the current wordwrap status and allows it to be changed without affecting the stored `settings`",
 	"version": "0.1.1",
-	"keywords": ["wordwrap"],
+	"keywords": [
+		"wordwrap"
+	],
 	"publisher": "grahammkelly",
 	"private": true,
 	"license": "GPL3",
@@ -33,8 +35,8 @@
 	"devDependencies": {
 		"@types/node": "^18.11.9",
 		"@types/vscode": "^1.32.0",
-		"@typescript-eslint/eslint-plugin": "^5.42.0",
-		"@typescript-eslint/parser": "^5.42.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.1",
+		"@typescript-eslint/parser": "^5.45.1",
 		"eslint": "^8.26.0",
 		"typescript": "^4.8.4"
 	}
