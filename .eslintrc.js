@@ -1,4 +1,5 @@
 /**@type {import('eslint').Linter.Config} */
+/* global module*/
 // eslint-disable-next-line no-undef
 module.exports = {
 	root: true,
