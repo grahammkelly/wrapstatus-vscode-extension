@@ -32,6 +32,8 @@ This extension was tested on
 
 [v0.1.3](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/v0.1.3) Updated URL for release 0.1.2 in README, no other changes
 
+---
+
 [HEAD](https://github.com/grahammkelly/wrapstatus-vscode-extension) _Not released yet_
 - Fixed security issue (shown in Github) on 'module' var in `.eslintrc.js`
 - Fixed typos in README
