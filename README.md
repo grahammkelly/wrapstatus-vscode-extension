@@ -13,16 +13,16 @@ Also allows you to double click the status bar item, which will cycle through th
 
 ## Supported versions
 This extension was tested on 
-* VSCodium 1.73.1
-* VisualStudio Code 1.73.1
+* VSCodium 1.73.1+
+* VisualStudio Code 1.73.1+
 
 ## Acknowledgements
-This extension is based upon the sample statusbar from https://github.com/microsoft/vscode-extension-samples
-The double click detection is based on tips & code from `medo64` (from this repo - https://github.com/medo64/Code-Point)
+- This extension is based upon the sample statusbar from https://github.com/microsoft/vscode-extension-samples
+- The double click detection is based on tips & code from `medo64` (from this repo - https://github.com/medo64/Code-Point)
 
 
 # Change Log
-[0.0.0](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.0.0) Initial code - no funcitonality
+[0.0.0](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.0.0) Initial code - no functionality
 
 [0.1.0](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.0) Initially working status bar extension
 
@@ -31,3 +31,7 @@ The double click detection is based on tips & code from `medo64` (from this repo
 [v0.1.2](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/v0.1.2) Added eslint action to the repository, updated README. No functional changes
 
 [v0.1.3](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/v0.1.3) Updated URL for release 0.1.2 in README, no other changes
+
+[HEAD](https://github.com/grahammkelly/wrapstatus-vscode-extension) _Not released yet_
+- Fixed security issue (shown in Github) on 'module' var in `.eslintrc.js`
+- Fixed typos in README
