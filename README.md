@@ -74,4 +74,5 @@ Updated URL for release 0.1.2 in README, no other changes
 [HEAD](https://github.com/grahammkelly/wrapstatus-vscode-extension) 
 
 - Updates to README to reflect last release
+- Experimenting with automerge being auto applied in some instances
 
