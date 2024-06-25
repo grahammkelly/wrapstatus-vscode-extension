@@ -40,22 +40,38 @@ This extension was tested on
 
 
 # Change Log
-[0.0.0](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.0.0) Initial code - no functionality
+[0.0.0](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.0.0) 
 
-[0.1.0](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.0) Initially working status bar extension
+Initial code - no functionality
 
-[0.1.1](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.1) Same as 0.1.0, however removed the browser extension files (not working and I don't use `vscode.dev` enough to be bothered investigating)
+[0.1.0](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.0) 
 
-[v0.1.2](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/v0.1.2) Added eslint action to the repository, updated README. No functional changes
+Initially working status bar extension
 
-[v0.1.3](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/v0.1.3) Updated URL for release 0.1.2 in README, no other changes
+[0.1.1](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.1) 
 
-[v0.1.4]() 
+Same as 0.1.0, however removed the browser extension files (not working and I don't use `vscode.dev` enough to be bothered investigating)
+
+[v0.1.2](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/v0.1.2) 
+
+Added eslint action to the repository, updated README. No functional changes
+
+[v0.1.3](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/v0.1.3) 
+
+Updated URL for release 0.1.2 in README, no other changes
+
+[0.1.4](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.4) 
+
 - Fixed security issue (shown in Github) on 'module' var in `.eslintrc.js`
 - Fixed typos in README
 - dependabot updates
 
+> **Note** - Changed Git tag format from `v1.2.3` to `1.2.3`
+
+
 ---
 
-[HEAD](https://github.com/grahammkelly/wrapstatus-vscode-extension) _Not released yet_
+[HEAD](https://github.com/grahammkelly/wrapstatus-vscode-extension) 
+
+- Updates to README to reflect last release
 
