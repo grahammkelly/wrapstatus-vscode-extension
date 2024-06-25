@@ -11,10 +11,28 @@ As the wrap setting itself, or the wrap column is changed in the settings, this 
 
 Also allows you to double click the status bar item, which will cycle through the wrap settings (in the order of 'on', 'off', 'wordWrapColumn', and 'bounded'). I'd prefer this to be in-memory only, and not stored, but unfortunately that doesn't seem possible in VSCode, so the changed setting is in the Workspace context. It will be 'remembered' through restarts only within the current workspace.
 
+## Notices
+This extension applies wrap settings for code files only. It will not affect the wrap settings for other file types (e.g. markdown, json, settings files, etc.). These seem to be managed elsewhere within Visual Studio Code. 
+
+As the extension scratches _my_ itch, I'm not currently planning to add support for other file types, but if you'd like to see this, please raise an issue and I'll consider it.
+
 ## Supported versions
 This extension was tested on 
 * VSCodium 1.73.1+
 * VisualStudio Code 1.73.1+
+
+## Package and Release
+1. **Important** Make sure the `package.json` file is updated with the correct version number
+2. Ensure the `vsce` NPM package is installed
+   If not, run `npm install -g vsce`
+3. Run `vsce package` to create the `.vsix` file
+   To test the extension in _your_ copy of Visual Studio Code, open the Extensions view, click on the '...' and select 'Install from VSIX...'. Select and install the VSIX package created in step 1
+4. To publish the extension, either
+   - Run `vsce publish` (you'll need to be logged in to the marketplace)
+
+   OR
+
+   - Log into the [Visual Studio Marketplace](https://marketplace.visualstudio.com/manage) and upload the `.vsix` file
 
 ## Acknowledgements
 - This extension is based upon the sample statusbar from https://github.com/microsoft/vscode-extension-samples
@@ -32,8 +50,12 @@ This extension was tested on
 
 [v0.1.3](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/v0.1.3) Updated URL for release 0.1.2 in README, no other changes
 
+[v0.1.4]() 
+- Fixed security issue (shown in Github) on 'module' var in `.eslintrc.js`
+- Fixed typos in README
+- dependabot updates
+
 ---
 
 [HEAD](https://github.com/grahammkelly/wrapstatus-vscode-extension) _Not released yet_
-- Fixed security issue (shown in Github) on 'module' var in `.eslintrc.js`
-- Fixed typos in README
+
