@@ -68,6 +68,9 @@ Updated URL for release 0.1.2 in README, no other changes
 
 > **Note** - Changed Git tag format from `v1.2.3` to `1.2.3`
 
+[0.1.5](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.5)
+
+Updated README - I didnt' realise the README goes _INTO_ the VSIX. No functional changes from 0.1.4, only README
 
 ---
 
