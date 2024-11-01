@@ -2,7 +2,7 @@
 	"name": "wordwrap-status",
 	"displayName": "Wordwrap status",
 	"description": "Shows the current wordwrap status and allows it to be changed without affecting the stored `settings`",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"keywords": [
 		"wordwrap"
 	],

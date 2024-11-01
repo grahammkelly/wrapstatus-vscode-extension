@@ -24,7 +24,7 @@ This extension was tested on
 ## Package and Release
 1. **Important** Make sure the `package.json` file is updated with the correct version number
 2. Ensure the `vsce` NPM package is installed
-   If not, run `npm install -g vsce`
+   If not, run `npm install -g @vscode/vsce`
 3. Run `vsce package` to create the `.vsix` file
    To test the extension in _your_ copy of Visual Studio Code, open the Extensions view, click on the '...' and select 'Install from VSIX...'. Select and install the VSIX package created in step 1
 4. To publish the extension, either
@@ -72,9 +72,14 @@ Updated URL for release 0.1.2 in README, no other changes
 
 Updated README - I didnt' realise the README goes _INTO_ the VSIX. No functional changes from 0.1.4, only README
 
+[0.1.6](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.6)
+
+Updated `vsce` package to 1.108.0, and updated README to reflect this. This _should_ not affect funcitonality, only packaging.
+
+
 ---
 
 [HEAD](https://github.com/grahammkelly/wrapstatus-vscode-extension) 
 
-- Updates to README to reflect last release
+- _Nothing yet!_
 
