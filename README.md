@@ -78,7 +78,7 @@ Updated `vsce` package to 1.108.0, and updated README to reflect this. This _sho
 
 [0.1.7](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.7)
 
-Updated dependnecies based upon dependabot recommendations. No functional changes
+Updated dependancies based upon dependabot recommendations. No functional changes
 Some typos fixed, and GH Actions changes (dependencies based upon the dependabot updates, and added new trigger)
 
 
