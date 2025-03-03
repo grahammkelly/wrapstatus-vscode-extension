@@ -1,6 +1,6 @@
 # wrapstatus-vscode-extension
 
->Version (0.1.5](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.5) is the last version of the plugin I'll publish to the Marketplace
+>Version [0.1.5](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.5) is the last version of the plugin I'll publish to the Marketplace
 >
 >I'm not updating this plugin within the Marketplace any longer. Either the flow to publish has changed or I've forgotten, but I cannot get my PAT to publish the extension. Frankly I could not be bothered either as I can use the extension locally so I'm not going to spend time on this. If you want to use this, you can clone or fork the repo and package it yourself.
 
