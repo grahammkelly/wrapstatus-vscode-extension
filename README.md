@@ -1,4 +1,9 @@
 # wrapstatus-vscode-extension
+
+>Version (0.1.5](https://github.com/grahammkelly/wrapstatus-vscode-extension/tree/0.1.5) is the last version of the plugin I'll publish to the Marketplace
+>
+>I'm not updating this plugin within the Marketplace any longer. Either the flow to publish has changed or I've forgotten, but I cannot get my PAT to publish the extension. Frankly I could not be bothered either as I can use the extension locally so I'm not going to spend time on this. If you want to use this, you can clone or fork the repo and package it yourself.
+
 Adds a status bar item in VS Code (and VSCodium) to show current wrap status and allow changing without affecting settings
 
 When editing files, I tend to swap between the word wrapping as needed as I read a file. It's always bugged me that I need to open the settings editor and find the specific setting to change in this case instead of having some easy way to toggle the wrapping, so I've added a status bar item to show and allow changing the word-wrap.
