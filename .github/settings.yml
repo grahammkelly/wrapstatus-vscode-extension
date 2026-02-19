@@ -23,10 +23,10 @@ repository:
 
   # Either `true` to enable projects for this repository, or `false` to disable them.
   # If projects are disabled for the organization, passing `true` will cause an API error.
-  has_projects: true
+  has_projects: false
 
   # Either `true` to enable the wiki for this repository, `false` to disable it.
-  has_wiki: true
+  has_wiki: false
 
   # Either `true` to enable downloads for this repository, `false` to disable them.
   has_downloads: true
@@ -115,8 +115,8 @@ branches:
     protection: 
       # Required. Require at least one approving review on a pull request, before merging. Set to null to disable.
       required_pull_request_reviews:
-        # The number of approvals required. (1-6)
-        required_approving_review_count: 1
+        ## The number of approvals required. (1-6)
+        #required_approving_review_count: 1
         # Dismiss approved reviews automatically when a new commit is pushed.
         dismiss_stale_reviews: true
         # Blocks merge until code owners have reviewed.
@@ -134,7 +134,7 @@ branches:
       # Required. Enforce all configured restrictions for administrators. Set to true to enforce required status checks for repository administrators. Set to null to disable.
       enforce_admins: null
       # Prevent merge commits from being pushed to matching branches
-      required_linear_history: true
+      required_linear_history: false
       # Required. Restrict who can push to this branch. Team and user restrictions are only available for organization-owned repositories. Set to null to disable.
       restrictions: null
         # apps: []
